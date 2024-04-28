@@ -1,0 +1,95 @@
+/* signup.css */
+
+@font-face {
+  font-family: martianMono;
+  src: url(../content/fonts/MartianMono.ttf);
+}
+
+/* Form container */
+#screen form {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Form inputs */
+#screen form input[type="number"],
+#screen form input[type="text"],
+#screen form input[type="email"],
+#screen form input[type="password"],
+#screen form select,
+#screen form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+  font-family: martianMono;
+}
+
+/* Button */
+#screen form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+#screen form button:hover {
+  background-color: #45a049;
+}
+
+/* Title text */
+.title-text {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+
+/* Fieldset and legend */
+fieldset {
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Checkbox styling */
+fieldset input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Checkbox label */
+fieldset label {
+  font-size: 16px;
+}
+
+/* Centering text inputs */
+#screen form input[type="number"],
+#screen form input[type="text"],
+#screen form input[type="email"],
+#screen form input[type="password"],
+#screen form select {
+  text-align: center;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+  #screen form {
+    width: 90%;
+  }
+}

@@ -1,0 +1,46 @@
+/* shopping_list_input.css */
+
+/* Form container */
+#screen form {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Form inputs */
+#screen form input[type="number"],
+#screen form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: martianMono;
+}
+
+/* Button */
+#screen form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+#screen form button:hover {
+    background-color: #45a049;
+}
+
+/* Label */
+#screen form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Centering text inputs */
+#screen form input[type="number"] {
+    text-align: center;
+}

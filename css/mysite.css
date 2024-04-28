@@ -1,0 +1,78 @@
+/* Style for logout button */
+.logout-button {
+  top: 10px;
+  right: 10px;
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#screen {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* New styles for the action buttons */
+.action-button {
+    margin: 20px 0px;
+    padding: 15px 0px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: martianMono;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Ensure buttons are inline */
+    width: 100%;
+    max-width: 280px; /* Adjust max-width as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    border: 3px solid #000000;
+  }
+  
+  /* Button hover effect */
+  .action-button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+  }
+  
+
+/* Style for burger menu button */
+#burger-menu-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Style for logout button */
+.logout-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

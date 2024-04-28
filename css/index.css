@@ -1,0 +1,53 @@
+@font-face {
+  font-family: martianMono;
+  src: url(../content/fonts/MartianMono.ttf);
+}
+
+@font-face {
+  font-family: protestStrike;
+  src: url(../content/fonts/ProtestStrike-Regular.ttf);
+}
+
+.login-link,
+.signup-link {
+  display: block;
+  width: 280px;
+  height: 50px;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 20px;
+  position: relative;
+  border: 3px solid #000000;
+}
+
+.login-text,
+.signup-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: martianMono;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.title-text {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: protestStrike;
+}
+
+.login-link:hover {
+  background-color: #c0d9ff;
+}
+
+.signup-link:hover {
+  background-color: #ffbaba;
+}

@@ -1,0 +1,7 @@
+#screen {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(140, 109, 253),
+    rgb(104, 238, 243)
+  );
+}
