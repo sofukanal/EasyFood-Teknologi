@@ -1,7 +1,7 @@
 #screen {
   background-image: linear-gradient(
     to bottom right,
-    rgb(175 241 255),
-    rgb(188 189 255)
+    rgb(175, 255, 195),
+    rgb(138, 196, 152)
   );
 }

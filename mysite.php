@@ -18,6 +18,7 @@ if (isset($_POST['logout'])) {
 <!-- Browser indstillinger -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,23 +31,37 @@ if (isset($_POST['logout'])) {
 </head>
 
 <!-- Hjemmesiden -->
+
 <body>
     <!-- iPhone -->
     <div id="iphone">
         <!-- iPhone skærm -->
         <div id="screen">
-            <!-- 3 knapper i midten af skærmen -->
-            <a href="shopping_list_input.php" class="action-button">Lav Indkøbsliste</a>
-            <a href="snack_input.php" class="action-button">Lav Snack</a>
-            <a href="saved_shopping_lists.php" class="action-button">Gemte Indkøbslister</a>
-            <!-- Burger menu knap i toppen til venstre -->
-            <button id="burger-menu-button" class="burger-menu-button">&#9776;</button>
-            <!-- Log ud knap -->
-            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-                <button class="logout-button" type="submit" name="logout">Log ud</button>
-            </form>
+            <!-- Fixed bar -->
+            <div id="fixed-bar">
+                <a href="mysite.php"><button><img src="/content/icons/settings-icon.svg" alt="Indstillinger"></button></a>
+                <a href="mysite.php"><button><img src="/content/icons/user-icon.svg" alt="Bruger"></button></a>
+                <!-- Logout form -->
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="logout-form">
+                    <button id="logout-button" type="submit"><img src="/content/icons/logout-icon.svg" alt="Log ud"></button>
+                    <input type="hidden" name="logout" value="logout">
+                </form>
+            </div>
+            <div id="content-wrapper">
+                <!-- 3 knapper i midten af skærmen -->
+                <a href="shopping_list_input.php" class="action-button">Lav Indkøbsliste</a>
+                <a href="snack_input.php" class="action-button">Lav Snack</a>
+                <a href="saved_shopping_lists.php" class="action-button">Gemte Indkøbslister</a>
+            </div>
         </div>
     </div>
+    <!-- JavaScript -->
+    <script>
+    // JavaScript code to perform logout when the logout button is clicked
+    document.getElementById('logout-button').addEventListener('click', function(event) {
+        document.getElementById('logout-form').submit(); // Submit the logout form
+    });
+</script>
 </body>
 
 </html>

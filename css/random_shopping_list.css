@@ -1,0 +1,42 @@
+/* Define CSS for the list */
+ul {
+    width: 100%; /* Set the width to the whole screen */
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Define CSS for list items */
+ul li {
+    margin-bottom: 10px; /* Add space between list items */
+}
+
+/* Define CSS for day heading */
+ul li strong {
+    margin-right: 10px; /* Add space between day label and text */
+}
+
+/* Define CSS for meal type */
+.meal-type {
+    font-weight: bold; /* Make meal type text bold */
+    margin-right: 5px; /* Add space between meal type and recipe */
+}
+
+/* Define CSS for the day container */
+.day-container {
+    border: 2px solid #000000; /* Add border around each day container */
+    padding: 20px; /* Add padding inside each day container */
+    margin-bottom: 20px; /* Add space between day containers */
+    width: 80%;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+.day-container:hover {
+    background-color: #bfdbca; /* Change background color when hovering */
+}
+
+/* Define CSS for the day heading */
+.day-container h2 {
+    margin-top: 0; /* Remove default margin from top of day heading */
+}

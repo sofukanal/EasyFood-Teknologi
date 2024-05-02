@@ -64,36 +64,39 @@ $conn->close();
     <div id="iphone">
         <!-- iPhone skærm -->
         <div id="screen">
-            <!-- Pil tilbage til startsiden -->
-            <a id="back-arrow" href="/mysite.php">
-                <img src="/content/icons/back-arrow.svg" alt="Back" width="40" height="40">
-            </a>
+            <!-- Fixed bar -->
+            <div id="fixed-bar">
+                <a href="mysite.php"><button><img src="/content/icons/back-arrow-icon.svg" alt="Indstillinger"></button></a>
+                <a></a>
+            </div>
             <!-- Form for shopping list input -->
-            <form action="generate_shopping_list.php" method="post">
-                <!-- Weight input -->
-                <label for="weight">Vægt (kg):</label>
-                <input type="number" id="weight" name="weight" value="<?php echo $weight; ?>" required>
+            <div id="content-wrapper">
+                <form action="random_recipes.php" method="post">
+                    <!-- Weight input -->
+                    <label for="weight">Vægt (kg):</label>
+                    <input type="number" id="weight" name="weight" value="<?php echo $weight; ?>" required>
 
-                <!-- Height input -->
-                <label for="height">Højde (cm):</label>
-                <input type="number" id="height" name="height" value="<?php echo $height; ?>" required>
+                    <!-- Height input -->
+                    <label for="height">Højde (cm):</label>
+                    <input type="number" id="height" name="height" value="<?php echo $height; ?>" required>
 
-                <!-- Period input -->
-                <label for="period">Periode (1-7 days):</label>
-                <input type="number" id="period" name="period" min="1" max="7" value="<?php echo $period; ?>" required>
+                    <!-- Period input -->
+                    <label for="period">Periode (1-7 days):</label>
+                    <input type="number" id="period" name="period" min="1" max="7" value="<?php echo $period; ?>" required>
 
-                <!-- Budget input -->
-                <label for="budget">Budget for periode (DKK):</label>
-                <input type="number" id="budget" name="budget" min="80" max="1000" value="<?php echo $budget; ?>" required>
+                    <!-- Budget input -->
+                    <label for="budget">Budget for periode (DKK):</label>
+                    <input type="number" id="budget" name="budget" min="80" max="1000" value="<?php echo $budget; ?>" required>
 
-                <!-- Add hidden inputs for gender and age -->
-                <input type="hidden" name="gender" value="<?php echo $row['gender']; ?>">
-                <input type="hidden" name="age" value="<?php echo $row['age']; ?>">
-                <input type="hidden" name="allergies_and_preferences" value="<?php echo htmlspecialchars($allergies_and_preferences); ?>">
+                    <!-- Add hidden inputs for gender and age -->
+                    <input type="hidden" name="gender" value="<?php echo $row['gender']; ?>">
+                    <input type="hidden" name="age" value="<?php echo $row['age']; ?>">
+                    <input type="hidden" name="allergies_and_preferences" value="<?php echo htmlspecialchars($allergies_and_preferences); ?>">
 
-                <!-- Submit button -->
-                <button type="submit">Generer Indkøbsliste</button>
-            </form>
+                    <!-- Submit button -->
+                    <button type="submit">Generer Indkøbsliste</button>
+                </form>
+            </div>
         </div>
     </div>
 </body>

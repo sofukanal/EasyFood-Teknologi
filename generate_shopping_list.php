@@ -19,9 +19,9 @@ if ($gender === 'M') {
 
 // Udregn daglige kalorie indtag
 $daily_calorie_intake = round(($bmr * 1.375)*0.9);
-$daily_breakfast_intake = round($daily_calorie_intake * 0.27);
-$daily_lunch_intake = round($daily_calorie_intake * 0.32);
-$daily_dinner_intake = round($daily_calorie_intake * 0.41);
+$daily_breakfast_intake = round($daily_calorie_intake * 0.25);
+$daily_lunch_intake = round($daily_calorie_intake * 0.35);
+$daily_dinner_intake = round($daily_calorie_intake * 0.35);
 
 // Print de forskellige udregnede værdier
 echo "Value of weight: $weight<br>";
@@ -209,3 +209,8 @@ echo "<br>";
 print_r($list_of_used_recipes_for_lunch);
 echo "<br>";
 print_r($list_of_used_recipes_for_dinner);
+
+// Omdiriger til generated_shopping_list.php med indkøbslistedata
+$list_of_dishes_per_day_json = json_encode($list_of_dishes_per_day);
+header("Location: generated_shopping_list.php?list_of_dishes_per_day=$list_of_dishes_per_day_json");
+exit;

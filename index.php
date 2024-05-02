@@ -22,8 +22,6 @@ if (isset($_COOKIE['user_id'])) {
 <body>
     <div id="iphone">
         <div id="screen">
-            <div class="title-text">Eazy Food</div>
-            <!-- Login and Signup links with text -->
             <a href="login.php" class="login-link">
                 <span class="login-text">Log Ind</span>
             </a>

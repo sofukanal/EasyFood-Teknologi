@@ -37,17 +37,11 @@
   font-weight: bold;
 }
 
-.title-text {
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  font-family: protestStrike;
-}
 
 .login-link:hover {
-  background-color: #c0d9ff;
+  background-color: #c6cdd8;
 }
 
 .signup-link:hover {
-  background-color: #ffbaba;
+  background-color: #c6cdd8;
 }
